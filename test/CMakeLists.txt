@@ -1,4 +1,5 @@
 include(GoogleTest)
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 set(TESTS_PROJECT RROS_Tests)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 add_executable(RROS_Tests UT_RROS.cpp mock/mock.cpp)

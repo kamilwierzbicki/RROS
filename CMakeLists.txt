@@ -5,6 +5,7 @@ set(BUILD_WITH_TESTS True CACHE STRING "Build with tests")
 add_subdirectory(3rd_party)
 add_subdirectory(src)
 if( BUILD_WITH_TESTS )
+	enable_testing()
     add_subdirectory(test)
 endif()
 
