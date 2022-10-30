@@ -1,18 +1,16 @@
-// clang-format off
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
-// clang-format on
+
 #include "RROS_Structs.h"
 #include "RROS_TimeCounter.h"
 #include "RROS_Types.h"
 
-RROS_Result RROS_init(const RROS_Handle *pHandle, const RROS_Task *pTasks,
+RROS_Result RROS_init(RROS_Handle *const pHandle, RROS_Task *const pTasks,
                       const size_t taskSize);
 
-// clang-format off
+RROS_Result RROS_run(RROS_Handle *const pHandle);
+
 #ifdef __cplusplus
 }
 #endif
-// clang-format on
